@@ -1,2 +1,32 @@
-# nvidia-legacy-390
-installer 390 driver for ubuntu/debian. Have a problems
+# NVIDIA 390.157 Installer for Debian/Ubuntu (Fermi GPUs)
+
+Скрипт для автоматической сборки и установки драйвера NVIDIA 390.157 из официальных исходников Debian.  
+Предназначен для видеокарт архитектуры Fermi (GeForce GT 540M, GTX 460, GTX 560 и другие) на системах с ядром Linux 6.x.
+
+## 📋 Особенности
+
+- Полная автоматическая сборка из исходников Debian (`sid`)
+- Поддержка Reverse PRIME для ноутбуков с технологией Optimus
+- Автоматическая настройка альтернатив GLX
+- Работает на Debian 12/13 и Ubuntu 24.04
+
+## ⚙️ Требования
+
+- Debian 11/12 или Ubuntu 24.04
+- Ядро Linux 6.x
+- Подключение к интернету для установки зависимостей
+- Права суперпользователя (sudo)
+
+## 🚀 Установка
+
+### 1. Скачайте архив с репозитория
+
+```bash
+git clone https://github.com/CyberAlex21/nvidia-legacy-390.git
+cd nvidia-legacy-390
+```
+### 2. Запустите установку
+
+```bash
+chmod +x install.sh
+./install.sh
